@@ -3,9 +3,16 @@
 		<script type="text/javascript" src="src/creator.js"></script>
 	</head>
 	<script type="text/javascript">
-		var Mike = create_object("Mike", "Smith");
-		document.write(typeof Mike);
-		document.write(Mike.firstName);
+		var mike = create_object("Mike", "Smith");
+		document.write(typeof mike);
+		document.write(mike.firstName);
+		var dan = new HumanConstr("Dan", "Jackson");
+		var dan2 = new HumanConstr("Dan2", "Jackson2");
+		console.log(dan);
+		document.write(dan.getLastName());
+		document.write(dan2.getLastName());
+		var dan3 = HumanFactory.create_object("Dan3", "J");
+		document.write(dan3.getLastName());
 	</script>
 	<body>
 
